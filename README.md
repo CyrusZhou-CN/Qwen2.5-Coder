@@ -26,7 +26,7 @@ In early April, we introduced CodeQwen1.5, which garnered significant attention 
 
 This update focuses on two main improvements: scaling up the code training data and enhancing coding capabilities while maintaining strong performance in other core areas like math and general tasks.
 
-💻 Code More: Qwen2.5-Coder builds on the strong Qwen2.5 and continues training on a larger scale of code data, including source code, text-code grounding data, and synthetic data, totaling 5.5 trillion tokens. This leads to significant improvements in code-related tasks.
+💻 Code More: Qwen2.5-Coder builds on the strong Qwen2.5 and continues training on a larger scale of code data, including source code, text-code grounding data, and synthetic data, totaling 5.5 trillion tokens.This resulting in substantial enhancements in code-related tasks.
 
 📚 Learn More: While enhancing coding abilities, we aimed to retain strengths in math and general capabilities from base model. Therefore, Qwen2.5-Coder incorporates additional data on mathematics and general abilities, providing a comprehensive foundation for real-world applications like Code Agent.
     
@@ -134,7 +134,6 @@ generated_ids = [
 
 response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 ```
-
 The `apply_chat_template()` function is used to convert the messages into a format that the model can understand. 
 The `add_generation_prompt` argument is used to add a generation prompt, which refers to `<|im_start|>assistant\n` to the input. Notably, we apply ChatML template for chat models following our previous practice. 
 The `max_new_tokens` argument is used to set the maximum length of the response. The `tokenizer.batch_decode()` function is used to decode the response. In terms of the input, the above messages is an example to show how to format your dialog history and system prompt.
