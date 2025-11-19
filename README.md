@@ -1,131 +1,76 @@
 <a name="readme-top"></a>
 
 <p align="center">
-    <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder/qwen2.5-coder-logo" width="400"/>
+    <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/qwen3_coder.png" width="400"/>
 <p>
 
 <p align="center">
-    <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder-Family/main_fig_32b_white.jpg" width="400"/>
+    <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/qwen3-coder-main.jpg" width="800"/>
 <p>
 
 <p align="center">
-        💜 <a href="https://chat.qwenlm.ai/"><b>Qwen Chat</b></a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/Qwen/qwen25-coder-66eaa22e6f99801bf65b0c2f">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/qwen">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp💻 <a href="https://www.kaggle.com/models/qwen-lm/qwen2.5-coder">Kaggle</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://qwenlm.github.io/blog/qwen2.5-coder-family">Blog</a> &nbsp&nbsp ｜ &nbsp&nbsp📖 <a href="https://qwen.readthedocs.io/">Documentation</a>
-<br>
-🖥️ <a href="https://huggingface.co/spaces/Qwen/Qwen2.5-Coder-demo">Demo</a>&nbsp&nbsp | 🖼 <a href="https://huggingface.co/spaces/Qwen/Qwen2.5-Coder-Artifacts">Artifacts</a>&nbsp&nbsp | &nbsp&nbsp💬 <a href="https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png">WeChat (微信)</a>&nbsp&nbsp | &nbsp&nbsp🫨 <a href="https://discord.gg/CV4E9rpNSD">Discord</a>&nbsp&nbsp | &nbsp&nbsp 📄<a href="https://arxiv.org/abs/2409.12186">Arxiv</a>&nbsp&nbsp | &nbsp&nbsp🖥️ <a href="https://gallery.pai-ml.com/#/preview/deepLearning/nlp/qwen2-5_coder_7b">PAI-DSW</a>&nbsp&nbsp
+        💜 <a href="https://chat.qwenlm.ai/"><b>Qwen Chat</b></a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/Qwen/qwen3-coder-687fc861e53c939e52d52d10">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/qwen">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://qwenlm.github.io/blog/qwen3-coder">Blog</a> &nbsp&nbsp ｜ &nbsp&nbsp📖 <a href="https://qwen.readthedocs.io/">Documentation</a>
+<br> 
+</a>&nbsp&nbsp | &nbsp&nbsp 🌍 <a href="https://huggingface.co/spaces/Qwen/Qwen3-Coder-WebDev">WebDev</a>&nbsp&nbsp | &nbsp&nbsp💬 <a href="https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png">WeChat (微信)</a>&nbsp&nbsp | &nbsp&nbsp🫨 <a href="https://discord.gg/CV4E9rpNSD"> Discord</a>&nbsp&nbsp | &nbsp&nbsp 📄 <a href="https://arxiv.org/abs/2505.09388">Arxiv</a>&nbsp&nbsp | &nbsp&nbsp 👽 <a href="https://github.com/QwenLM/qwen-code">Qwen Code</a>
 </p>
 
+Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with `Qwen3-Coder-`, and you will find all you need! Enjoy!
 
-Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with `Qwen2.5-Coder-`, and you will find all you need! Enjoy!
+# Latest News
+🔥🔥🔥 Qwen3-Coder-30B-A3B-Instruct has been released, for more information <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/tree/main">here</a>.  
 
-# Qwen2.5-Coder Series: Powerful, Diverse, Practical.
+# Qwen3-Coder: Agentic Coding in the World.
 
 ## Introduction
 
-Today, we are excited to open source the “Powerful”, “Diverse”, and “Practical” **Qwen2.5-Coder** series (formerly known as CodeQwen1.5), dedicated to continuously promoting the development of Open CodeLLMs.
+Today, we're announcing Qwen3-Coder, our most agentic code model to date. **Qwen3-Coder** is available in multiple sizes, but we're excited to introduce its most powerful variant first: **Qwen3-Coder-480B-A35B-Instruct** — a 480B-parameter Mixture-of-Experts model with 35B active parameters, offering exceptional performance in both coding and agentic tasks. **Qwen3-Coder-480B-A35B-Instruct** sets new state-of-the-art results among open models on Agentic Coding, Agentic Browser-Use, and Agentic Tool-Use, comparable to Claude Sonnet. 
 
-💻 Powerful: Qwen2.5-Coder-32B-Instruct has become the current SOTA open-source code model, matching the coding capabilities of GPT-4o. While demonstrating strong and comprehensive coding abilities, it also possesses good general and mathematical skills;
+💻 **Significant Performance**: among open models on **Agentic Coding**, **Agentic Browser-Use**, and other foundational coding tasks, achieving results comparable to Claude Sonnet;
 
-📚 Diverse: Building on the previously open-sourced two sizes of 1.5B / 7B, this release brings four model sizes, including 0.5B / 3B / 14B / 32B. As of now, Qwen2.5-Coder has covered six mainstream model sizes to meet the needs of different developers;
+📚 **Long-context Capabilities**: with native support for **256K** tokens, extendable up to **1M** tokens using Yarn, optimized for repository-scale understanding;
 
-🛠 Practical: We explore the practicality of Qwen2.5-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of Qwen2.5-Coder in real-world scenarios;
+🛠 **Agentic Coding**: supporting for most platform such as **Qwen Code**, **CLINE**, featuring a specially designed function call format;
 
 ## Basic information
 
-1. ✨ Supporting long context understanding and generation with the context length of 128K tokens;
-2. ✨ Supporting 92 coding languages;
+1. ✨ Supporting long context understanding and generation with the context length of 256K tokens;
+2. ✨ Supporting 358 coding languages;
 ```
-['ada', 'agda', 'alloy', 'antlr', 'applescript', 'assembly', 'augeas', 'awk', 'batchfile', 'bluespec', 'c', 'c#', 'c++', 'clojure', 'cmake', 'coffeescript', 'common-lisp', 'css', 'cuda', 'dart', 'dockerfile', 'elixir', 'elm', 'emacs-lisp', 'erlang', 'f#', 'fortran', 'glsl', 'go', 'groovy', 'haskell', 'html', 'idris', 'isabelle', 'java', 'java-server-pages', 'javascript', 'json', 'julia', 'jupyter-notebook', 'kotlin', 'lean', 'literate-agda', 'literate-coffeescript', 'literate-haskell', 'lua', 'makefile', 'maple', 'markdown', 'mathematica', 'matlab', 'objectc++', 'ocaml', 'pascal', 'perl', 'php', 'powershell', 'prolog', 'protocol-buffer', 'python', 'r', 'racket', 'restructuredtext', 'rmarkdown', 'ruby', 'rust', 'sas', 'scala', 'scheme', 'shell', 'smalltalk', 'solidity', 'sparql', 'sql', 'stan', 'standard-ml', 'stata', 'swift', 'systemverilog', 'tcl', 'tcsh', 'tex', 'thrift', 'typescript', 'verilog', 'vhdl', 'visual-basic', 'vue', 'xslt', 'yacc', 'yaml', 'zig']
+['ABAP', 'ActionScript', 'Ada', 'Agda', 'Alloy', 'ApacheConf', 'AppleScript', 'Arc', 'Arduino', 'AsciiDoc', 'AspectJ', 'Assembly', 'Augeas', 'AutoHotkey', 'AutoIt', 'Awk', 'Batchfile', 'Befunge', 'Bison', 'BitBake', 'BlitzBasic', 'BlitzMax', 'Bluespec', 'Boo', 'Brainfuck', 'Brightscript', 'Bro', 'C', 'C#', 'C++', 'C2hs Haskell', 'CLIPS', 'CMake', 'COBOL', 'CSS', 'CSV', "Cap'n Proto", 'CartoCSS', 'Ceylon', 'Chapel', 'ChucK', 'Cirru', 'Clarion', 'Clean', 'Click', 'Clojure', 'CoffeeScript', 'ColdFusion', 'ColdFusion CFC', 'Common Lisp', 'Component Pascal', 'Coq', 'Creole', 'Crystal', 'Csound', 'Cucumber', 'Cuda', 'Cycript', 'Cython', 'D', 'DIGITAL Command Language', 'DM', 'DNS Zone', 'Darcs Patch', 'Dart', 'Diff', 'Dockerfile', 'Dogescript', 'Dylan', 'E', 'ECL', 'Eagle', 'Ecere Projects', 'Eiffel', 'Elixir', 'Elm', 'Emacs Lisp', 'EmberScript', 'Erlang', 'F#', 'FLUX', 'FORTRAN', 'Factor', 'Fancy', 'Fantom', 'Forth', 'FreeMarker', 'G-code', 'GAMS', 'GAP', 'GAS', 'GDScript', 'GLSL', 'Genshi', 'Gentoo Ebuild', 'Gentoo Eclass', 'Gettext Catalog', 'Glyph', 'Gnuplot', 'Go', 'Golo', 'Gosu', 'Grace', 'Gradle', 'Grammatical Framework', 'GraphQL', 'Graphviz (DOT)', 'Groff', 'Groovy', 'Groovy Server Pages', 'HCL', 'HLSL', 'HTML', 'HTML+Django', 'HTML+EEX', 'HTML+ERB', 'HTML+PHP', 'HTTP', 'Haml', 'Handlebars', 'Harbour', 'Haskell', 'Haxe', 'Hy', 'IDL', 'IGOR Pro', 'INI', 'IRC log', 'Idris', 'Inform 7', 'Inno Setup', 'Io', 'Ioke', 'Isabelle', 'J', 'JFlex', 'JSON', 'JSON5', 'JSONLD', 'JSONiq', 'JSX', 'Jade', 'Jasmin', 'Java', 'Java Server Pages', 'JavaScript', 'Julia', 'Jupyter Notebook', 'KRL', 'KiCad', 'Kit', 'Kotlin', 'LFE', 'LLVM', 'LOLCODE', 'LSL', 'LabVIEW', 'Lasso', 'Latte', 'Lean', 'Less', 'Lex', 'LilyPond', 'Linker Script', 'Liquid', 'Literate Agda', 'Literate CoffeeScript', 'Literate Haskell', 'LiveScript', 'Logos', 'Logtalk', 'LookML', 'Lua', 'M', 'M4', 'MAXScript', 'MTML', 'MUF', 'Makefile', 'Mako', 'Maple', 'Markdown', 'Mask', 'Mathematica', 'Matlab', 'Max', 'MediaWiki', 'Metal', 'MiniD', 'Mirah', 'Modelica', 'Module Management System', 'Monkey', 'MoonScript', 'Myghty', 'NSIS', 'NetLinx', 'NetLogo', 'Nginx', 'Nimrod', 'Ninja', 'Nit', 'Nix', 'Nu', 'NumPy', 'OCaml', 'ObjDump', 'Objective-C++', 'Objective-J', 'Octave', 'Omgrofl', 'Opa', 'Opal', 'OpenCL', 'OpenEdge ABL', 'OpenSCAD', 'Org', 'Ox', 'Oxygene', 'Oz', 'PAWN', 'PHP', 'POV-Ray SDL', 'Pan', 'Papyrus', 'Parrot', 'Parrot Assembly', 'Parrot Internal Representation', 'Pascal', 'Perl', 'Perl6', 'Pickle', 'PigLatin', 'Pike', 'Pod', 'PogoScript', 'Pony', 'PostScript', 'PowerShell', 'Processing', 'Prolog', 'Propeller Spin', 'Protocol Buffer', 'Public Key', 'Pure Data', 'PureBasic', 'PureScript', 'Python', 'Python traceback', 'QML', 'QMake', 'R', 'RAML', 'RDoc', 'REALbasic', 'RHTML', 'RMarkdown', 'Racket', 'Ragel in Ruby Host', 'Raw token data', 'Rebol', 'Red', 'Redcode', "Ren'Py", 'RenderScript', 'RobotFramework', 'Rouge', 'Ruby', 'Rust', 'SAS', 'SCSS', 'SMT', 'SPARQL', 'SQF', 'SQL', 'STON', 'SVG', 'Sage', 'SaltStack', 'Sass', 'Scala', 'Scaml', 'Scheme', 'Scilab', 'Self', 'Shell', 'ShellSession', 'Shen', 'Slash', 'Slim', 'Smali', 'Smalltalk', 'Smarty', 'Solidity', 'SourcePawn', 'Squirrel', 'Stan', 'Standard ML', 'Stata', 'Stylus', 'SuperCollider', 'Swift', 'SystemVerilog', 'TOML', 'TXL', 'Tcl', 'Tcsh', 'TeX', 'Tea', 'Text', 'Textile', 'Thrift', 'Turing', 'Turtle', 'Twig', 'TypeScript', 'Unified Parallel C', 'Unity3D Asset', 'Uno', 'UnrealScript', 'UrWeb', 'VCL', 'VHDL', 'Vala', 'Verilog', 'VimL', 'Visual Basic', 'Volt', 'Vue', 'Web Ontology Language', 'WebAssembly', 'WebIDL', 'X10', 'XC', 'XML', 'XPages', 'XProc', 'XQuery', 'XS', 'XSLT', 'Xojo', 'Xtend', 'YAML', 'YANG', 'Yacc', 'Zephir', 'Zig', 'Zimpl', 'desktop', 'eC', 'edn', 'fish', 'mupad', 'nesC', 'ooc', 'reStructuredText', 'wisp', 'xBase']
 ```
-3. ✨ Retain strengths in math and general capabilities from base model
+3. ✨ Retain strengths in math and general capabilities from base model.
 
 > [!Important]
-> We updated both the special tokens and their corresponding token ids, in order to maintain consistency with Qwen2.5. The new special tokens are as the following:
+> 
+> Qwen3-coder function calling relies on our new tool parser `qwen3coder_tool_parser.py` <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/main/qwen3coder_tool_parser.py">here</a>.
+>
+> We updated both the special tokens and their corresponding token ids, in order to maintain consistency with Qwen3. Please make sure to use the new tokenizer.
 
-```json
-{
-  "<|fim_prefix|>": 151659, 
-  "<|fim_middle|>": 151660, 
-  "<|fim_suffix|>": 151661, 
-  "<|fim_pad|>": 151662, 
-  "<|repo_name|>": 151663, 
-  "<|file_sep|>": 151664, 
-  "<|im_start|>": 151644, 
-  "<|im_end|>": 151645
-}
-```
 
 | model name                  | type     | length | Download                                                                                                                                                                        |
 |-----------------------------|----------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Qwen2.5-Coder-0.5B          | base     | 32k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B)                                       |
-| Qwen2.5-Coder-1.5B          | base     | 32k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-1.5B)                                       |
-| Qwen2.5-Coder-3B            | base     | 32k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-3B) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-3B)                                           |
-| Qwen2.5-Coder-7B            | base     | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-7B) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-7B)                                           |
-| Qwen2.5-Coder-14B           | base     | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-14B) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-14B)                                         |
-| Qwen2.5-Coder-32B           | base     | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-32B) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-32B)                                         |
-| Qwen2.5-Coder-0.5B-instruct | instruct | 32k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B-Instruct)                     |
-| Qwen2.5-Coder-1.5B-instruct | instruct | 32k     | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-1.5B-Instruct)                     |
-| Qwen2.5-Coder-3B-instruct   | instruct | 32k     | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-3B-Instruct)                         |
-| Qwen2.5-Coder-7B-instruct   | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-7B-Instruct)                         |
-| Qwen2.5-Coder-14B-instruct  | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-14B-Instruct)                       |
-| Qwen2.5-Coder-32B-instruct  | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-32B-Instruct)                       |
-| Qwen2.5-Coder-0.5B-Instruct-AWQ       | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-AWQ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B-Instruct-AWQ)             |
-| Qwen2.5-Coder-0.5B-Instruct-GGUF      | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF)           |
-| Qwen2.5-Coder-0.5B-Instruct-GPTQ-Int4 | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GPTQ-Int4) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B-Instruct-GPTQ-Int4) |
-| Qwen2.5-Coder-0.5B-Instruct-GPTQ-Int8 | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GPTQ-Int8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B-Instruct-GPTQ-Int8) |
-| Qwen2.5-Coder-1.5B-Instruct-AWQ       | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-AWQ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-1.5B-Instruct-AWQ)             |
-| Qwen2.5-Coder-1.5B-Instruct-GGUF      | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF)           |
-| Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int4 | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int4) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int4) |
-| Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int8 | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int8) |
-| Qwen2.5-Coder-3B-Instruct-AWQ       | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-AWQ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-3B-Instruct-AWQ)                 |
-| Qwen2.5-Coder-3B-Instruct-GGUF      | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF)               |
-| Qwen2.5-Coder-3B-Instruct-GPTQ-Int4 | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GPTQ-Int4) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-3B-Instruct-GPTQ-Int4)     |
-| Qwen2.5-Coder-3B-Instruct-GPTQ-Int8 | instruct | 32k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GPTQ-Int8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-3B-Instruct-GPTQ-Int8)     |
-| Qwen2.5-Coder-7B-Instruct-AWQ         | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-AWQ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-7B-Instruct-AWQ)             |
-| Qwen2.5-Coder-7B-Instruct-GGUF        | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF)           |
-| Qwen2.5-Coder-7B-Instruct-GPTQ-Int4   | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GPTQ-Int4) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-7B-Instruct-GPTQ-Int4) |
-| Qwen2.5-Coder-7B-Instruct-GPTQ-Int8   | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GPTQ-Int8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-7B-Instruct-GPTQ-Int8) |
-| Qwen2.5-Coder-14B-Instruct-AWQ         | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-AWQ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-14B-Instruct-AWQ)             |
-| Qwen2.5-Coder-14B-Instruct-GGUF        | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF)           |
-| Qwen2.5-Coder-14B-Instruct-GPTQ-Int4   | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GPTQ-Int4) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-14B-Instruct-GPTQ-Int4) |
-| Qwen2.5-Coder-14B-Instruct-GPTQ-Int8   | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GPTQ-Int8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-14B-Instruct-GPTQ-Int8) |
-| Qwen2.5-Coder-32B-Instruct-AWQ         | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-AWQ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-32B-Instruct-AWQ)             |
-| Qwen2.5-Coder-32B-Instruct-GGUF        | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF)           |
-| Qwen2.5-Coder-32B-Instruct-GPTQ-Int4   | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GPTQ-Int4) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-32B-Instruct-GPTQ-Int4) |
-| Qwen2.5-Coder-32B-Instruct-GPTQ-Int8   | instruct | 128k   | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GPTQ-Int8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen2.5-Coder-32B-Instruct-GPTQ-Int8) |
+| Qwen3-Coder-480B-A35B-Instruct         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct  ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-480B-A35B-Instruct)                                       |
+| Qwen3-Coder-480B-A35B-Instruct-FP8         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8)                                       |
+| Qwen3-Coder-30B-A3B-Instruct         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-30B-A3B-Instruct)                                       |
+| Qwen3-Coder-30B-A3B-Instruct-FP8         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8)                                       |
 
 
-Detailed performance and introduction are shown in this <a href="https://qwenlm.github.io/blog/qwen2.5-coder-family"> 📑 blog</a>.
-
-## Requirements
-* `python>=3.9`
-* `transformers>4.37.0` for Qwen2.5 dense models.
-
-> [!Warning]
-> <div align="center">
-> <b>
-> 🚨 This is a must because `transformers` integrated Qwen2 codes since `4.37.0`.
-> </b>
-> </div>
-
-You can install the required packages with the following command:
-```bash
-pip install -r requirements.txt
-```
+Detailed performance and introduction are shown in this <a href="https://qwenlm.github.io/blog/qwen3-coder"> 📑 blog</a>.
 
 ## Quick Start
 
 > [!Important]
-> **Qwen2.5-Coder-\[0.5-32\]B-Instruct** are instruction models for chatting;
+> **Qwen3-Coder-480B-A35B-Instruct** are instruction models for chatting;
 >
-> **Qwen2.5-Coder-\[0.5-32\]B** is a base model typically used for completion, serving as a better starting point for fine-tuning.
+> This model supports only non-thinking mode and does not generate ``<think></think>`` blocks in its output. Meanwhile, specifying `enable_thinking=False` is no longer required.**
 >
-### 👉🏻 Chat with Qwen2.5-Coder-32B-Instruct
-You can just write several lines of code with `transformers` to chat with Qwen2.5-Coder-32B-Instruct. Essentially, we build the tokenizer and the model with `from_pretrained` method, and we use generate method to perform chatting with the help of chat template provided by the tokenizer. Below is an example of how to chat with Qwen2.5-Coder-32B-Instruct:
+### 👉🏻 Chat with Qwen3-Coder
+You can just write several lines of code with `transformers` to chat with Qwen3-Coder-480B-A35B-Instruct. Essentially, we build the tokenizer and the model with `from_pretrained` method, and we use generate method to perform chatting with the help of chat template provided by the tokenizer. Below is an example of how to chat with **Qwen3-Coder-480B-A35B-Instruct**:
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = "Qwen/Qwen2.5-Coder-32B-Instruct"
+model_name = "Qwen/Qwen3-Coder-480B-A35B-Instruct"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
@@ -136,7 +81,6 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 prompt = "write a quick sort algorithm."
 messages = [
-    {"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."},
     {"role": "user", "content": prompt}
 ]
 text = tokenizer.apply_chat_template(
@@ -148,7 +92,7 @@ model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 
 generated_ids = model.generate(
     **model_inputs,
-    max_new_tokens=512
+    max_new_tokens=65536
 )
 generated_ids = [
     output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
@@ -161,56 +105,15 @@ The `add_generation_prompt` argument is used to add a generation prompt, which r
 The `max_new_tokens` argument is used to set the maximum length of the response. The `tokenizer.batch_decode()` function is used to decode the response. In terms of the input, the above messages is an example to show how to format your dialog history and system prompt.
 You can use the other size of instruct model in the same way.
 
-### 👉🏻 Code with Qwen2.5-Coder-32B
 
-#### 1. Basic Usage
-The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as `code completion` in the code generation tasks.
+#### Fill in the middle with Qwen3-Coder
 
-Essentially, we build the tokenizer and the model with `from_pretrained` method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:
-```python
-from transformers import AutoTokenizer, AutoModelForCausalLM
+The code insertion task, also referred to as the "fill-in-the-middle" challenge, requires the insertion of code segments in a manner that bridges the gaps within a given code context. For an approach aligned with best practices, we recommend adhering to the formatting guidelines outlined in the paper "Efficient Training of Language Models to Fill in the Middle"[[arxiv](https://arxiv.org/abs/2207.14255)]. 
 
-device = "cuda" # the device to load the model onto
+> [!Important]
+> It should be noted that FIM is supported in every version of Qwen3-Coder. Qwen3-Coder-480B-A35B-Instruct is shown here as an example.
+>
 
-# Now you do not need to add "trust_remote_code=True"
-TOKENIZER = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-Coder-32B")
-MODEL = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-Coder-32B", device_map="auto").eval()
-
-# tokenize the input into tokens
-input_text = "#write a quick sort algorithm"
-model_inputs = TOKENIZER([input_text], return_tensors="pt").to(device)
-
-# Use `max_new_tokens` to control the maximum output length.
-generated_ids = MODEL.generate(model_inputs.input_ids, max_new_tokens=512, do_sample=False)[0]
-# The generated_ids include prompt_ids, so we only need to decode the tokens after prompt_ids.
-output_text = TOKENIZER.decode(generated_ids[len(model_inputs.input_ids[0]):], skip_special_tokens=True)
-
-print(f"Prompt: {input_text}\n\nGenerated text: {output_text}")
-```
-The `max_new_tokens` argument is used to set the maximum length of the response.
-The `input_text` could be any text that you would like model to continue with.
-
-
-#### 2. Processing Long Texts
-
-The current `config.json` is set for context length up to 32,768 tokens.
-To handle extensive inputs exceeding 32,768 tokens, we utilize [YaRN](https://arxiv.org/abs/2309.00071), a technique for enhancing model length extrapolation, ensuring optimal performance on lengthy texts.
-
-For supported frameworks, you could add the following to `config.json` to enable YaRN:
-```json
-{
-  ...,
-  "rope_scaling": {
-    "factor": 4.0,
-    "original_max_position_embeddings": 32768,
-    "type": "yarn"
-  }
-}
-```
-
-#### 3. File-Level Code Completion (Fill in the middle)
-The code insertion task, also referred to as the "fill-in-the-middle" challenge, requires the insertion of code segments in a manner that bridges the gaps within a given code context.
-For an approach aligned with best practices, we recommend adhering to the formatting guidelines outlined in the paper "Efficient Training of Language Models to Fill in the Middle"[[arxiv](https://arxiv.org/abs/2207.14255)]. This involves the use of three specialized tokens`<fim_prefix>`, `<fim_suffix>`, and `<fim_middle>` to denote the respective segments of the code structure.
 The prompt should be structured as follows:
 ```python
 prompt = '<|fim_prefix|>' + prefix_code + '<|fim_suffix|>' + suffix_code + '<|fim_middle|>'
@@ -222,8 +125,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 # load model
 device = "cuda" # the device to load the model onto
 
-TOKENIZER = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-Coder-32B")
-MODEL = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-Coder-32B", device_map="auto").eval()
+TOKENIZER = AutoTokenizer.from_pretrained("Qwen/Qwen3-Coder-480B-A35B-Instruct")
+MODEL = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-Coder-480B-A35B-Instruct", device_map="auto").eval()
+
 
 input_text = """<|fim_prefix|>def quicksort(arr):
     if len(arr) <= 1:
@@ -233,225 +137,227 @@ input_text = """<|fim_prefix|>def quicksort(arr):
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
     return quicksort(left) + middle + quicksort(right)<|fim_middle|>"""
+            
+messages = [
+    {"role": "system", "content": "You are a code completion assistant."},
+    {"role": "user", "content": input_text}
+]
 
-model_inputs = TOKENIZER([input_text], return_tensors="pt").to(device)
+
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True
+)
+model_inputs = TOKENIZER([text], return_tensors="pt").to(model.device)
 
 # Use `max_new_tokens` to control the maximum output length.
-generated_ids = MODEL.generate(model_inputs.input_ids, max_new_tokens=512, do_sample=False)[0]
+eos_token_ids = [151659, 151661, 151662, 151663, 151664, 151643, 151645]
+generated_ids = MODEL.generate(model_inputs.input_ids, max_new_tokens=512, do_sample=False, eos_token_id=eos_token_ids)[0]
 # The generated_ids include prompt_ids, we only need to decode the tokens after prompt_ids.
 output_text = TOKENIZER.decode(generated_ids[len(model_inputs.input_ids[0]):], skip_special_tokens=True)
 
 print(f"Prompt: {input_text}\n\nGenerated text: {output_text}")
 ```
 
-#### 4. Repository-Level Code Completion
-The repository level code completion task involves feeding the model the content of multiple files from the same repository. This enables the model to understand the interrelationships between different calls within these files, thereby facilitating the completion of code content.
-We recommend using the two special tokens `<|repo_name|>` and `<|file_sep|>` to indicate the repository structure.
-For example, assuming the repository name is stored in `repo_name`, and it contains files with their respective paths and contents listed as [(`file_path1`, `file_content1`), (`file_path2`, `file_content2`)], the format of the final input prompt would be as follows:
-```python
-input_text = f'''<|repo_name|>{repo_name}
-<|file_sep|>{file_path1} 
-{file_content1}
-<|file_sep|>{file_path2} 
-{file_content2}'''
-```
+## Use Cases
+### Example: Physics-Based Chimney Demolition Simulation with Controlled Explosion
 
-<details><summary>👇🏻 Below is a complete example of a repository level code completion task: <i>:: click to expand ::</i></summary>
-<div>
-
-```python
-from transformers import AutoTokenizer, AutoModelForCausalLM
-device = "cuda" # the device to load the model onto
-
-# Now you do not need to add "trust_remote_code=True"
-TOKENIZER = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-Coder-32B")
-MODEL = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-Coder-32B", device_map="auto").eval()
-
-# tokenize the input into tokens
-input_text = """<|repo_name|>library-system
-<|file_sep|>library.py
-class Book:
-    def __init__(self, title, author, isbn, copies):
-        self.title = title
-        self.author = author
-        self.isbn = isbn
-        self.copies = copies
-
-    def __str__(self):
-        return f"Title: {self.title}, Author: {self.author}, ISBN: {self.isbn}, Copies: {self.copies}"
-
-class Library:
-    def __init__(self):
-        self.books = []
-
-    def add_book(self, title, author, isbn, copies):
-        book = Book(title, author, isbn, copies)
-        self.books.append(book)
-
-    def find_book(self, isbn):
-        for book in self.books:
-            if book.isbn == isbn:
-                return book
-        return None
-
-    def list_books(self):
-        return self.books
-
-<|file_sep|>student.py
-class Student:
-    def __init__(self, name, id):
-        self.name = name
-        self.id = id
-        self.borrowed_books = []
-
-    def borrow_book(self, book, library):
-        if book and book.copies > 0:
-            self.borrowed_books.append(book)
-            book.copies -= 1
-            return True
-        return False
-
-    def return_book(self, book, library):
-        if book in self.borrowed_books:
-            self.borrowed_books.remove(book)
-            book.copies += 1
-            return True
-        return False
-
-<|file_sep|>main.py
-from library import Library
-from student import Student
-
-def main():
-    # Set up the library with some books
-    library = Library()
-    library.add_book("The Great Gatsby", "F. Scott Fitzgerald", "1234567890", 3)
-    library.add_book("To Kill a Mockingbird", "Harper Lee", "1234567891", 2)
-    
-    # Set up a student
-    student = Student("Alice", "S1")
-    
-    # Student borrows a book
-"""
-model_inputs = TOKENIZER([input_text], return_tensors="pt").to(device)
-
-# Use `max_new_tokens` to control the maximum output length.
-generated_ids = MODEL.generate(model_inputs.input_ids, max_new_tokens=1024, do_sample=False)[0]
-# The generated_ids include prompt_ids, so we only need to decode the tokens after prompt_ids.
-output_text = TOKENIZER.decode(generated_ids[len(model_inputs.input_ids[0]):], skip_special_tokens=True)
-
-print(f"Prompt: \n{input_text}\n\nGenerated text: \n{output_text}")
+<details>
+<summary>Prompt with Qwen Chat Web Dev </summary>
 
 ```
-The expected output as following:
-```python
-Generated text:
-    book = library.find_book("1234567890")
-    if student.borrow_book(book, library):
-    print(f"{student.name} borrowed {book.title}")
-    else:
-    print(f"{student.name} could not borrow {book.title}")
-    
-        # Student returns a book
-        if student.return_book(book, library):
-            print(f"{student.name} returned {book.title}")
-        else:
-            print(f"{student.name} could not return {book.title}")
-        
-        # List all books in the library
-        print("All books in the library:")
-        for book in library.list_books():
-            print(book)
+使用 three.js, cannon-es.js 生成一个震撼的3D建筑拆除演示。
 
-if __name__ == "__main__":
-main()
+## 场景设置：
+- 地面是一个深灰色混凝土平面，尺寸80*80，
+- 所有物体严格遵循现实物理规则，包括重力、摩擦力、碰撞检测和动量守恒
+
+## 建筑结构：
+- 一座圆形高层建筑，周长对应20个方块
+- 建筑总高度60个方块
+- 每层采用砖砌结构，方块与砖结构建筑一致, 错开50%排列，增强结构稳定性
+- 建筑外墙使用米色方块
+- **重要：方块初始排列时必须确保紧密贴合，无间隙，可以通过轻微重叠或调整半径来实现**
+- **重要：建筑初始化完成后，所有方块应该处于物理"睡眠"状态，确保建筑在爆炸前保持完美的静止状态，不会因重力而下沉或松散**
+- 建筑砖块之间使用粘性材料填充（不可见），通过高摩擦力（0.8+）和低弹性（0.05以下）来模拟粘合效果
+- 砖块在建筑倒塌瞬间不会散掉，而是建筑作为一个整体倒在地面的时候才因受力过大而散掉
+
+## 定向爆破系统：
+- 在建筑的第1层的最右侧方块附近安装爆炸装置（不可见）
+- 提供操作按钮点击爆炸
+- **爆炸时唤醒所有相关方块的物理状态**
+- 爆炸点产生半径2的强力冲击波，冲击波影响到的方块, 受到2-5单位的冲击力
+
+## 建筑稳定性要求：
+- **确保建筑在未爆炸时完全静止，无任何晃动或下沉**
+- **物理世界初始化后给建筑几个物理步骤来自然稳定，或使用睡眠机制**
+- **方块间的接触材料应具有高摩擦力和极低弹性，模拟砖块间的砂浆粘合**
+
+## 震撼的倒塌效果：
+- 方块在爆炸冲击下不仅飞散，还会在空中翻滚和碰撞
+- 烟尘会随着建筑倒塌逐渐扩散，营造真实的拆除现场氛围
+
+## 增强的视觉效果：
+- 添加环境光照变化：爆炸瞬间亮度激增，然后被烟尘遮挡变暗
+- 粒子系统包括：烟雾、灰尘
+
+## 技术要求：
+- 粒子系统用于烟雾和灰尘效果
+- 所有代码集成在单个HTML文件中，包含必要的CSS样式
+- 添加简单的UI控制：重置按钮、相机角度切换, 爆炸按钮, 鼠标左键控制摄像机角度，右键控制摄像机位置，滚轮控制摄像机焦距
 ```
 
-</div>
 </details>
 
-### 👉🏻 Deploying Qwen2.5-Coder with vLLM
-As a family member of Qwen2.5, Qwen2.5-Coder are supported by vLLM. The detail tutorial  could be found in [Qwen tutorial](https://qwen.readthedocs.io/en/latest/deployment/vllm.html).
-Here, we give you an simple example of offline batched inference in vLLM.
+<p align="center">
+    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo1.mp4">
+    <img src="assets/usage_demo_example1.png" width="400" />
+    </a>
+<p >
 
-#### Offline Batched Inference
-```python
-from transformers import AutoTokenizer
-from vllm import LLM, SamplingParams
-# Initialize the tokenizer
-tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-Coder-32B")
+### Example: Multicolor and Interactive Animation
 
-# Pass the default decoding hyperparameters of Qwen1.5-32B-Chat
-# max_tokens is for the maximum length for generation.
-sampling_params = SamplingParams(temperature=0.7, top_p=0.8, repetition_penalty=1.05, max_tokens=1024)
+<details>
+<summary>Prompt with Cline [act mode] </summary>
 
-# Input the model name or path. Can be GPTQ or AWQ models.
-llm = LLM(model="Qwen/Qwen2.5-Coder-32B")
+```
+Create an amazing animation multicolor and interactive using p5js
 
-# Prepare your prompts
-prompt = "#write a quick sort algorithm.\ndef quick_sort("
+use this cdn:
+https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.min.js
+```
+</details>
 
-# generate outputs
-outputs = llm.generate([prompt], sampling_params)
+<p align="center">
+    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo2.mp4">
+    <img src="assets/usage_demo_example2.png" width="400" />
+    </a>
+<p >
 
-# Print the outputs.
-for output in outputs:
-    prompt = output.prompt
-    generated_text = output.outputs[0].text
-    print(f"Prompt: {prompt!r}, Generated text: {generated_text!r}")
+### Example: 3D Google Earth
+
+<details>
+<summary>Prompt with Qwen Chat Web Dev </summary>
+
+```
+To create a 3D Google Earth, you need to load the terrain map correctly. You can use any online resource. The code is written into an HTML file.
 ```
 
-#### Multi-GPU Distributed Serving
-To scale up your serving throughputs, distributed serving helps you by leveraging more GPU devices.
-When using ultra-long sequences for inference, it might cause insufficient GPU memory. Here, we demonstrate how to run Qwen2.5-Coder-32B with tensor parallelism just by passing in the argument `tensor_parallel_size`.
-```python
-llm = LLM(model="Qwen/Qwen2.5-Coder-32B", tensor_parallel_size=8)
+</details>
+
+<p align="center">
+    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo3.mp4">
+    <img src="assets/usage_demo_example3.png" width="400" />
+    </a>
+<p >
+
+### Example: Testing Your WPM with a Famous Quote 
+
+
+<details>
+<summary> Prompt with Qwen-Code CLI </summary>
+
 ```
-### 👉🏻 Gradio interface 🤗
-
-We also provide a Gradio <a href='https://github.com/gradio-app/gradio'><img src='https://img.shields.io/github/stars/gradio-app/gradio'></a> interface for a better experience, just run by:
-
-```bash
-cd demo/chatbot/
-# For Linux and Windows users (and macOS with Intel??)
-python app.py 
-
-# For macOS with Apple Silicon users, Intel not supported, this maybe 20x slower than RTX 4090
-PYTORCH_ENABLE_MPS_FALLBACK=1 python app.py
+Create an interesting typing game with a keyboard in the lower middle of the screen and some famous articles in the upper middle. When the user types a word correctly, a cool reaction should be given to encourage him. Design a modern soft color scheme inspired by macarons. Come up with a very creative solution first, and then start writing code.
+The game should be able to support typing, and you need to neglect upcase and lowercase.
 ```
+</details>
 
-We also provide a Gradio interface of artifacts mode:
-```bash
-cd demo/artifacts/
-python app.py
+<p align="center">
+    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo4.mp4">
+    <img src="assets/usage_demo_example4.png" width="400" />
+    </a>
+<p >
+
+### Example: Bouncing Ball in Rotation Hypercube
+
+
+<details>
+<summary> Prompt with Qwen Chat Web Dev </summary>
+
 ```
+Make a page in HTML that shows an animation of a ball bouncing in a rotating hypercube
+```
+</details>
 
-You can specify the `--server_port`, `--share`, `--server_name` arguments to satisfy your needs!
+<p align="center">
+    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo5.mp4">
+    <img src="assets/usage_demo_example5.png" width="400" />
+    </a>
+<p >
 
-**Or, try it out effortlessly on HuggingFace: [「chatbot demo」](https://huggingface.co/spaces/Qwen/Qwen2.5-Coder-demo) 🤗 [「artifacts demo」](https://huggingface.co/spaces/Qwen/Qwen2.5-Coder-Artifacts)**
+### Example: Solar System Simulation
 
-## Performance
-For more information, please  refer to the <a href="https://arxiv.org/abs/2409.12186">Qwen2.5-Coder Technical Report</a>.
+
+<details>
+<summary> Prompt with Cline [act mode] </summary>
+
+```
+write a web page to show the solar system simulation
+```
+</details>
+
+
+<p align="center">
+    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo6.mp4">
+    <img src="assets/usage_demo_example6.png" width="400" />
+    </a>
+<p >
+
+### Example: DUET Game
+
+
+<details>
+<summary> Prompt with Cline [act mode] </summary>
+
+```
+Create a complete, single-file HTML game with CSS and JavaScript. The game is inspired by "Duet".
+
+Gameplay:
+
+There are two balls, one red and one blue, rotating around a central point.
+The player uses the 'A' and 'D' keys to rotate them counter-clockwise and clockwise.
+White rectangular obstacles move down from the top of the screen.
+The player must rotate the balls to avoid hitting the obstacles.
+If a ball hits an obstacle, the game is over.
+Visuals:
+
+Make the visual effects amazing.
+Use a dark background with neon glowing effects for the balls and obstacles.
+Animations should be very smooth.
+```
+</details>
+
+
+<p align="center">
+    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo7.mp4">
+    <img src="assets/usage_demo_example7.png" width="400" />
+    </a>
+<p >
+
 
 ## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=QwenLM/Qwen2.5-Coder&type=Date)](https://star-history.com/#QwenLM/Qwen2.5-Coder&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=QwenLM/Qwen3-Coder&type=Date)](https://star-history.com/#QwenLM/Qwen3-Coder&Date)
 
 ## Citation
 If you find our work helpful, feel free to give us a cite.
 
 ```bibtex
+@misc{qwen3technicalreport,
+      title={Qwen3 Technical Report}, 
+      author={Qwen Team},
+      year={2025},
+      eprint={2505.09388},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.09388},
+}
 @article{hui2024qwen2,
   title={Qwen2. 5-Coder Technical Report},
   author={Hui, Binyuan and Yang, Jian and Cui, Zeyu and Yang, Jiaxi and Liu, Dayiheng and Zhang, Lei and Liu, Tianyu and Zhang, Jiajun and Yu, Bowen and Dang, Kai and others},
   journal={arXiv preprint arXiv:2409.12186},
   year={2024}
-}
-@article{qwen2,
-    title={Qwen2 Technical Report},
-    author={An Yang and Baosong Yang and Binyuan Hui and Bo Zheng and Bowen Yu and Chang Zhou and Chengpeng Li and Chengyuan Li and Dayiheng Liu and Fei Huang and Guanting Dong and Haoran Wei and Huan Lin and Jialong Tang and Jialin Wang and Jian Yang and Jianhong Tu and Jianwei Zhang and Jianxin Ma and Jin Xu and Jingren Zhou and Jinze Bai and Jinzheng He and Junyang Lin and Kai Dang and Keming Lu and Keqin Chen and Kexin Yang and Mei Li and Mingfeng Xue and Na Ni and Pei Zhang and Peng Wang and Ru Peng and Rui Men and Ruize Gao and Runji Lin and Shijie Wang and Shuai Bai and Sinan Tan and Tianhang Zhu and Tianhao Li and Tianyu Liu and Wenbin Ge and Xiaodong Deng and Xiaohuan Zhou and Xingzhang Ren and Xinyu Zhang and Xipin Wei and Xuancheng Ren and Yang Fan and Yang Yao and Yichang Zhang and Yu Wan and Yunfei Chu and Yuqiong Liu and Zeyu Cui and Zhenru Zhang and Zhihao Fan},
-    journal={arXiv preprint arXiv:2407.10671},
-    year={2024}
 }
 ```
 
