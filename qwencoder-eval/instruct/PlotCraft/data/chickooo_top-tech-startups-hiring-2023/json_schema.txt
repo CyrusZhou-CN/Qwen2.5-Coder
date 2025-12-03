@@ -1,0 +1,24 @@
+{
+    "id": 1,
+    "company_name": "name of the company",
+    "headline": "company headline",
+    "tags": [
+        "tag 1",
+        "tag 2"
+    ],
+    "website": "website_url",
+    "employees": "1-100",
+    "about": "info about the company",
+    "locations": [
+        "location 1",
+        "location 2"
+    ],
+    "industries": [
+        "industry 1",
+        "industry 2"
+    ],
+    "jobs": {
+        "job 1": vacancies,
+        "job 2": vacancies
+    }
+}

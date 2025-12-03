@@ -1,0 +1,2 @@
+id     company_name              headline                website           employees     about                        tags               locations                    industries                   jobs
+1      "name of the company"     "company headline"      "website_url"     1-100         "info about the company"     "tag 1, tag 2"     "location 1, location 2"     "industry 1, industry 2"     "(job 1: vacancies), (job 2: vacancies)"

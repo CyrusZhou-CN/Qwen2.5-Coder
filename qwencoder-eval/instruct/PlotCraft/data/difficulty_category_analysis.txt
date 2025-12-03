@@ -1,0 +1,46 @@
+=== 难度等级与类别统计分析报告 ===
+
+1. 按难度等级统计:
+difficulty	total_files	percentage(%)
+hard	169	34.42
+middle	163	33.20
+simple	159	32.38
+
+2. 按类别统计:
+category	total_files	percentage(%)
+Change	165	33.60
+Composition	59	12.02
+Correlation	53	10.79
+Deviation	23	4.68
+Distribution	80	16.29
+Groups	68	13.85
+Ranking	43	8.76
+
+3. 难度×类别交叉统计 (任务数量):
+difficulty\category	Change	Composition	Correlation	Deviation	Distribution	Groups	Ranking	total
+hard	74	11	12	6	2	64	0	169
+middle	58	29	39	16	7	4	10	163
+simple	33	19	2	1	71	0	33	159
+total	165	59	53	23	80	68	43	491
+
+4. 难度×类别交叉统计 (百分比):
+difficulty\category	Change	Composition	Correlation	Deviation	Distribution	Groups	Ranking
+hard	15.07%	2.24%	2.44%	1.22%	0.41%	13.03%	0.00%
+middle	11.81%	5.91%	7.94%	3.26%	1.43%	0.81%	2.04%
+simple	6.72%	3.87%	0.41%	0.20%	14.46%	0.00%	6.72%
+
+5. 每个类别内的难度分配:
+category	hard	middle	simple	total
+Change	74(44.8%)	58(35.2%)	33(20.0%)	165
+Composition	11(18.6%)	29(49.2%)	19(32.2%)	59
+Correlation	12(22.6%)	39(73.6%)	2(3.8%)	53
+Deviation	6(26.1%)	16(69.6%)	1(4.3%)	23
+Distribution	2(2.5%)	7(8.8%)	71(88.8%)	80
+Groups	64(94.1%)	4(5.9%)	0(0.0%)	68
+Ranking	0(0.0%)	10(23.3%)	33(76.7%)	43
+
+6. 每个难度内的类别分配:
+difficulty	Change	Composition	Correlation	Deviation	Distribution	Groups	Ranking	total
+hard	74(43.8%)	11(6.5%)	12(7.1%)	6(3.6%)	2(1.2%)	64(37.9%)	0(0.0%)	169
+middle	58(35.6%)	29(17.8%)	39(23.9%)	16(9.8%)	7(4.3%)	4(2.5%)	10(6.1%)	163
+simple	33(20.8%)	19(11.9%)	2(1.3%)	1(0.6%)	71(44.7%)	0(0.0%)	33(20.8%)	159
