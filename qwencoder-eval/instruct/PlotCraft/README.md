@@ -31,6 +31,11 @@ pip install -r requirements.txt
 
 ## Prepare Data
 
+```bash
+zip -F data.zip --out complete_data.zip
+unzip complete_data.zip -d data
+```
+
 ### Method 1: Automated Download via Kaggle API
 
 1. **Obtain Kaggle API credentials**: Navigate to your Kaggle account settings (Account tab) and select 'Create New Token'. This downloads `kaggle.json` containing your API credentials.
